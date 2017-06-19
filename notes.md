@@ -6,7 +6,7 @@
 - `git init` (inside dir)
 - `git add .`
 - `git commit -m "Initial commit"`
-- create github repo with no license or readme
+- on github.com create a repo with no license or readme
 - `git remote add origin remote repository URL`
 - `git push -u origin master`
 - `rails g controller pluralized-controller-name` (i.e. posts )
@@ -18,3 +18,5 @@
 - `form_for` helper is excellent for creating a form and uses things like `f.label :thing`, `f.text_field :thing`, `f.text_area :thing`, and `f.submit`
 - `rails g model Post title:string body:text` helps to quickly generate a model and migration
 - in making a create etc where params are taken in from a form rails needs us to set a `private` method i.e. `def post_params` that outlines which params are required and what attributes are permitted `params.require(:post).permit(:title, :body)`
+- `rails g model Comment name:string body:text post:references` adds a new model and migration with proper fields including reference for association via foreign key
+- `rails g controller Comments`
