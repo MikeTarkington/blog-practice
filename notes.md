@@ -20,3 +20,10 @@
 - in making a create etc where params are taken in from a form rails needs us to set a `private` method i.e. `def post_params` that outlines which params are required and what attributes are permitted `params.require(:post).permit(:title, :body)`
 - `rails g model Comment name:string body:text post:references` adds a new model and migration with proper fields including reference for association via foreign key
 - `rails g controller Comments`
+- added `gem 'devise'` to gem file
+- `bundle`
+- `rails g devise:install`
+- follow instructions from devise install in the console
+- `rails g devise:views`
+- `rails g devise User`
+- `rake db:migrate`
